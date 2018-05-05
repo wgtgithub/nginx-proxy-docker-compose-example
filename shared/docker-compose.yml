@@ -8,7 +8,7 @@ services:
       - "8080:80"
       - "443:443"
     volumes:
-      - /opt:/opt
+      - /opt/proxy:/opt
       - /var/run/docker.sock:/tmp/docker.sock:ro
       - ./certs:/etc/nginx/certs:ro
     restart: always
