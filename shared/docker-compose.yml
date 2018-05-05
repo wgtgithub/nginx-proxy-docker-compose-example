@@ -11,6 +11,7 @@ services:
       - ./certs:/etc/nginx/certs:ro
     restart: always
     logging:
+      driver: "json-file"
       options:
         max-size: "5m"
         max-file: "10"
@@ -28,6 +29,7 @@ services:
       MYSQL_ROOT_PASSWORD: root
     restart: always
     logging:
+      driver: "json-file"
       options:
         max-size: "5m"
         max-file: "10"
