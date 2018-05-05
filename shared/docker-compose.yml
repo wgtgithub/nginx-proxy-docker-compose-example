@@ -1,6 +1,7 @@
 version: "2"
 services:
   proxy:
+    hostname : myproxy
     image: jwilder/nginx-proxy
     container_name: proxy
     ports:
