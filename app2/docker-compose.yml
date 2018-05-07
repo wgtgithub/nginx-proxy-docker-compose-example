@@ -9,8 +9,9 @@ services:
       - mysql
     restart: always
     logging:
+      driver: "json-file"
       options:
-        max-size: 5m
+        max-size: "5m"
         max-file: "10"
 
 networks:
